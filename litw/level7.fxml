@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="litw.Level7Controller">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="642.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../background/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="317.0" fitWidth="423.0" layoutX="110.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../buttons/f.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="-7.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../background/title.png" />
+         </image>
+      </ImageView>
+      <Button contentDisplay="CENTER" layoutX="264.0" layoutY="285.0" mnemonicParsing="false" onAction="#check" prefHeight="52.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="Check" textFill="#fcf38f">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/b_2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Chalkboard" size="20.0" />
+         </font>
+      </Button>
+      <Group fx:id="idleG" layoutX="65.0" layoutY="350.0" />
+      <Group fx:id="idleB" layoutX="65.0" layoutY="350.0" />
+      <Button layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#Back" prefHeight="28.0" prefWidth="42.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/b_6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnum" layoutX="586.0" layoutY="404.0" mnemonicParsing="false" onAction="#Unmute" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/sound_off.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnm" layoutX="586.0" layoutY="404.0" mnemonicParsing="false" onAction="#Mute" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/sound.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <StackPane layoutX="495.0" layoutY="405.0" prefHeight="35.0" prefWidth="101.0">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/b_5.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb" textFill="#cd932f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <ImageView fitHeight="127.0" fitWidth="346.0" layoutX="148.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../level7/table-problem.png" />
+         </image>
+      </ImageView>
+      <Text fill="#cd932f" layoutX="190.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How tall is the table ?">
+         <font>
+            <Font name="Chalkboard" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#cd932f" layoutX="331.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cm">
+         <font>
+            <Font name="Arial Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="answer" layoutX="280.0" layoutY="259.0" prefHeight="26.0" prefWidth="51.0">
+         <font>
+            <Font name="Arial Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="249.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Heading/IPE5TGkr.gif" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

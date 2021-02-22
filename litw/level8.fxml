@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="litw.Level8Controller">
+   <children>
+      <Label fx:id="cont" layoutX="21.0" layoutY="116.0" />
+      <ImageView fitHeight="470.0" fitWidth="642.0" pickOnBounds="true">
+         <image>
+            <Image url="@../background/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="347.0" fitWidth="471.0" layoutX="83.0" layoutY="55.0" pickOnBounds="true">
+         <image>
+            <Image url="@../buttons/f.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button layoutX="580.0" layoutY="398.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#ButtonBack" prefHeight="28.0" prefWidth="42.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/b_6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="3.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../background/title.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnum" layoutX="580.0" layoutY="399.0" mnemonicParsing="false" onAction="#Unmute" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/sound_off.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnm" layoutX="580.0" layoutY="400.0" mnemonicParsing="false" onAction="#Mute" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/sound.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Group fx:id="idleG" layoutX="75.0" layoutY="370.0" />
+      <Group fx:id="idleB" layoutX="75.0" layoutY="360.0" />
+      <Button fx:id="timerBtn" contentDisplay="CENTER" layoutX="487.0" layoutY="396.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="93.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../buttons/b_5.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="lb" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="383.0" prefHeight="64.0" prefWidth="93.0" textFill="#cd932f">
+         <padding>
+            <Insets left="12.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Chalkboard" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="244.0" fitWidth="350.0" layoutX="142.0" layoutY="102.0" onMouseClicked="#wrong" pickOnBounds="true">
+         <image>
+            <Image url="@../background/27e4165044aea0b111be984a4d.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Circle fx:id="cr1" fill="WHITE" layoutX="216.0" layoutY="245.0" opacity="0.61" radius="16.0" stroke="#dd1313" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="cr3" fill="WHITE" layoutX="195.0" layoutY="277.0" opacity="0.61" radius="16.0" stroke="#dd1313" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="cr4" fill="WHITE" layoutX="379.0" layoutY="165.0" opacity="0.61" radius="16.0" stroke="#dd1313" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fx:id="cr2" fill="WHITE" layoutX="163.0" layoutY="170.0" opacity="0.61" radius="16.0" stroke="#dd1313" strokeType="INSIDE" strokeWidth="2.0" />
+      <Button fx:id="B4" layoutX="363.0" layoutY="153.0" mnemonicParsing="false" onAction="#B4" prefHeight="23.0" prefWidth="32.0" style="-fx-background-color: tranparent;" />
+      <Button fx:id="B1" layoutX="200.0" layoutY="233.0" mnemonicParsing="false" onAction="#B1" prefHeight="23.0" prefWidth="32.0" style="-fx-background-color: tranparent;" />
+      <Button fx:id="B3" layoutX="179.0" layoutY="265.0" mnemonicParsing="false" onAction="#B3" prefHeight="23.0" prefWidth="32.0" style="-fx-background-color: tranparent;" />
+      <Button fx:id="B2" layoutX="147.0" layoutY="158.0" mnemonicParsing="false" onAction="#B2" prefHeight="23.0" prefWidth="32.0" style="-fx-background-color: tranparent;" />
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="249.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Heading/F9hN0PWe.gif" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>
